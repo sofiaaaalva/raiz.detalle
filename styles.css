@@ -197,6 +197,15 @@ height: 100vh;
 /* SECCIÓN 2: PILARES DE LA MARCA (3 COLUMNAS) */
 .pilares {
     background-color: var(--color-naranja);
+    background-image: url('imagenes/grid3.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
@@ -256,6 +265,15 @@ display: flex;
 /* SECCIÓN 3: MODALIDAD - VISIÓN - PROPÓSITO */
 .vision-section {
     background-color: var(--color-crema);
+    background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
     display: grid;
     grid-template-columns: 1fr 1.3fr; 
     gap: 80px; 
@@ -332,6 +350,15 @@ display: flex;
 /* SECCIÓN 4: CAROUSEL DE RESEÑAS ANTES/DESPUÉS */
 .reviews-section {
     background-color: var(--color-crema);
+    background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
     border-top: 1px solid rgba(76, 21, 5, 0.15);
 }
 
@@ -669,6 +696,15 @@ display: flex;
 /* SECCIÓN 7: IMAGEN GRANDE E INFO CURSO */
 .cta-course-section {
     background-color: var(--color-naranja);
+    background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0;
@@ -725,6 +761,16 @@ display: flex;
 /* SECCIÓN 8: PREGUNTAS FRECUENTES (ACORDEÓN) */
 .faq-section {
     background-color: var(--color-crema);
+    background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
+    
     border-top: 1px solid rgba(76, 21, 5, 0.15);
 }
 
@@ -1585,6 +1631,15 @@ display: flex;
 .capsula {
   width: 100%;
   background-color: var(--color-oscuro); /* Cambiado a tu variable de fondo oscuro */
+  background-image: url('imagenes/grid3.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
   padding: 100px 5% 100px 5%;
   text-align: center;
   position: relative;
@@ -1614,14 +1669,14 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
 }
 
 .capsula h4 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.1;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    margin-top: 5px;
-    margin-bottom: 40px;
-    color: var(--color-crema);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+  margin-bottom: 5vh; /* Separación vertical fluida antes del carrusel */
+  color: var(--color-crema);
 }
 
 .counter {
@@ -1630,7 +1685,7 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
   letter-spacing: 0.12em;
   color: var(--color-crema);
   opacity: 0.6;
-  margin-bottom: 0px;
+  margin-bottom: 1vh;
   height: 20px;
 }
 
@@ -1642,14 +1697,14 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
   gap: 0;
   overflow: hidden;
   width: 100%;
-  height: 360px;
+  height: 60vh; /* Ocupa el 60% del alto de cualquier pantalla */
 }
 
 .carousel2-track {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 2vw; /* El espacio entre tarjetas crece o se achica con el navegador */
   width: 100%;
   height: 100%;
 }
@@ -1672,20 +1727,20 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
 }
 
 .card2.side {
-  width: 220px;
-  height: 250px;
+  width: 19vw;
+  height: 25vw;
   opacity: 0.55;
 }
 
 .card2.far-side {
-  width: 180px;
-  height: 220px;
+  width: 14vw;
+  height: 20vw;
   opacity: 0.25;
 }
 
 .card2.active {
-  width: 300px;
-  height: 320px;
+  width: 26vw;  
+  height: 32vw; 
   opacity: 1;
   background: var(--color-crema);
 }
@@ -1747,7 +1802,7 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
   align-items: center;
   justify-content: center;
   gap: 32px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .nav2-arrow {
@@ -1778,6 +1833,23 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
   stroke-linejoin: round;
 }
 
+/* --- 5. RESPALDO PARA CELULARES (Evita que queden diminutas en pantallas muy chicas) --- */
+@media (max-width: 768px) {
+  .carousel2-wrapper {
+    height: 45vh; /* Bajamos el alto general en móviles */
+  }
+  .card2.active {
+    width: 65vw;  /* En celulares la tarjeta activa toma más protagonismo */
+    height: 75vw;
+  }
+  .card2.side {
+    width: 45vw;
+    height: 55vw;
+  }
+  .card2.far-side {
+    display: none; /* Escondemos los extremos en celulares para que no se amontone */
+  }
+}
 
 
 /* ==========================================================================
@@ -1941,6 +2013,16 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
   justify-content: space-between;
   align-items: center; /* Alinea los bloques abajo para favorecer el efecto fichero */
   background-color: var(--color-crema); /* Color de fondo de tu imagen */
+  background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
+
   padding: 80px 10%;
   gap: 80px;
   min-height: 80vh;
@@ -2068,6 +2150,16 @@ transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
 /* Contenedor principal de la sección */
 .frase-section {
   background-color: var(--color-oscuro); /* Mismo fondo gris */
+    background-image: url('imagenes/grid3.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
+
 padding-top: 140px;       /* Buen aire vertical para destacar la tipografía */
 padding-bottom: 200px;
 padding-right: 5%; padding-left: 5%;
@@ -2151,6 +2243,16 @@ padding-right: 5%; padding-left: 5%;
 
 .tecnica-container {
   background-color: var(--color-oscuro);
+    background-image: url('imagenes/grid3.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
+
   color: var(--color-crema);
   padding: 8% 40px 120px 8%;
   margin: 0 auto;
@@ -2532,6 +2634,16 @@ display: inline-flex;
 
 /* SECCIÓN ESTADÍSTICAS PAGINA DETALLE */
 .stats-section {
+    background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
+
   padding-bottom: 150px;
   padding-top: 50px;
   padding-left: 20px;

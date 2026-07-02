@@ -1868,6 +1868,15 @@ font-size: clamp(2rem, 2.5vw, 2.8rem);
 
 /* Estilos Base de la Sección */
 .contact-section {
+  background-image: url('imagenes/grid4.png');
+  
+  /* Configuraciones para la trama: */
+  background-repeat: repeat;    /* Hace que la textura se repita en mosaico infinitamente */
+  background-position: center;
+  background-size: auto;        /* Mantiene el tamaño real de los píxeles de la trama */
+  /* FUSIONA LA TRAMA CON TU COLOR: 
+     'multiply' la oscurece e integra, 'overlay' la suaviza. Proba cuál te queda mejor */
+  background-blend-mode: multiply;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
